@@ -1,7 +1,7 @@
-.navbar {
+.nav {
   position: relative;
   z-index: 10;
-  
+
   &__title {
     display: block;
     text-align: center;
@@ -9,5 +9,34 @@
     padding: 50px 0;
     color: $grey;
     margin-bottom: 0;
+  }
+
+  a {
+    color: black;
+    font-size: 18px;
+
+    &:hover {
+      background-color: #ffb997;
+    }
+  }
+
+  &-sports {
+    li {
+      &:nth-child(2) {
+        a {
+          &:hover {
+            color: #ffb997;
+          }
+        }
+      }
+    }
+
+    a {
+      border-radius: 15px;
+
+      &:hover {
+        color: white
+      }
+    }
   }
 }

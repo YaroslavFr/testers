@@ -30,3 +30,12 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	});
 })
+let elementsArray = document.querySelectorAll(".img__border");
+console.log(elementsArray);
+elementsArray.forEach(function (elem) {
+	elem.addEventListener("click", function () {
+		// this.popover('show');
+		console.log(elem);
+	});
+});
+

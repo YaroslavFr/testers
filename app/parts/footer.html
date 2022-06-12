@@ -1,13 +1,32 @@
-
-	<footer class="footer">
-		<div class="container">
-			<h5 class="footer__title">THIS IS FOOTER</h5>
+<div class="col-md-12">
+	<div class="container">
+		<div class="row">
+			<footer class="d-flex flex-wrap justify-content-between align-items-start py-3 my-4 border-top">
+				<div class="col-md-6 d-flex align-items-end justify-content-between">
+					<span class="text-muted">© 2022 Company, Inc</span>
+				</div>
+				<div class="col-md-3 menu">
+					<ul>
+						<h4>USEFUL LINKS</h4>
+						<li><a href="/enlgish.html">About us</a></li>
+						<li><a href="/enlgish.html">Contacts</a></li>
+					</ul>
+				</div>
+				<ul class="footer-socials d-flex nav col-md-1 justify-content-around list-unstyled d-flex">
+					<li class="icon-li ms-3"><a class="text-muted" href="#"><img src="img/twitter.png" alt=""></a></li>
+					<li class="icon-li s-3"><a class="text-muted" href="#"><img src="img/instagram.png" alt=""></a></li>
+					<li class="icon-li s-3"><a class="text-muted" href="#"><img src="img/facebook.png" alt=""></a></li>
+				</ul>
+			</footer>
 		</div>
-		<!-- /.container -->
-	</footer>
-	<!-- /.footer -->
+	</div>
+</div>
 
-	<script src="/js/app.min.js?v=<!--#echo var="version" -->"></script>
-	
+<script src="/js/app.min.js?v=<!--#echo var=" version" -->"></script>
+<script>
+	const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+	const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+</script>
 </body>
+
 </html>
